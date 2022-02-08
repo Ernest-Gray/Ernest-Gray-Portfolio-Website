@@ -1,0 +1,27 @@
+.intro{
+  background-color: rgb(221, 212, 255);
+  color:black;
+  border: black solid 3px;
+  border-radius: 15px;
+  font-size: 32px;
+
+  text-align: left;
+  line-height: 1;
+
+  margin: 15px;
+  padding: 25px;
+
+  font-weight: 200;
+
+  background: rgb(221,212,255);
+  background: linear-gradient(180deg, rgba(221,212,255,1) 0%, rgba(230,224,255,1) 75%, rgba(255,255,255,1) 100%);
+
+
+}
+
+.hello{
+  inherits: intro;
+  font-size: 40px;
+  text-align: center;
+  font-weight: 400;
+}

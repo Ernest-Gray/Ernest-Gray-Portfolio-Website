@@ -1,0 +1,20 @@
+.inner {
+  font-size: 32px;
+  color: white;
+
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+
+  background-color: wheat;
+  border: 2px solid black;
+  border-radius: 25px;
+
+  padding: 15px;
+  text-align: center;
+
+  max-width: 250px;
+}
+
+.outer {
+  margin: opx;
+}
