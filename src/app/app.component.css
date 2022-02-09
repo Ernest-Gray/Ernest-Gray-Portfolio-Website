@@ -16,17 +16,7 @@
   margin: 5px;
 }
 
-.gradientDown {
-  background: rgb(221, 212, 255);
-  background: linear-gradient(
-    180deg,
-    rgba(221, 212, 255, 1) 0%,
-    rgba(230, 224, 255, 1) 75%,
-    rgba(255, 255, 255, 1) 100%
-  );
-}
-
-body{
+html{
   /* background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%); */
 
   background-position: center;
@@ -34,6 +24,8 @@ body{
   background-color: black;
 
   background-image: url("/assets/Colored Portfolio Background Gif.gif");
+
+  margin: 0px;
 
 }
 

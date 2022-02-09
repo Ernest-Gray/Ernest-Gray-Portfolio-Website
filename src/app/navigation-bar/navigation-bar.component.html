@@ -1,9 +1,23 @@
 <div class="container">
-  <div class="myName">Ernest Gray IV</div>
+  <div>
+    <div class="myName">Ernest Gray IV</div>
+    <div class="list">
+      <a class="link" target="blank" href="https://github.com/Ernest-Gray"
+        >GitHub<img class="icon" src="/assets/githubIcon.png"
+      /></a>
+      <a
+        class="link"
+        target="blank"
+        href="https://www.linkedin.com/in/ernest-gray-a877a9100/"
+        >LinkedIn<img class="icon" src="/assets/LinkedInIcon.png"
+      /></a>
+      <a class="link">Contact Me<img class="icon" src="" /></a>
+    </div>
 
-  <div class="list" *ngFor="let item of array">
-    <a class="link" href="{{ item.url }}" target="blank"
-      >{{ item.name }}<img class="icon" src="{{ item.imageSource }}"
-    /></a>
+    <!-- <div class="list" *ngFor="let item of array">
+      <a class="link" href="{{ item.url }}" target="blank"
+        >{{ item.name }}<img class="icon" src="{{ item.imageSource }}"
+      /></a>
+    </div> -->
   </div>
 </div>
