@@ -17,8 +17,6 @@
   text-align: left;
   align-items: center;
 
-  border: 3px solid rgb(146, 255, 246);
-
   background-color: rgba(0, 0, 0, 0.212);
 
   color: white;
@@ -59,8 +57,10 @@
 
 .container {
   display: table;
+  margin-left: 25px;
 
-  width: 350px;
-  height: auto;
+
+  width: 250px;
+  height: max(auto, 250px);
   padding: 3px;
 }
