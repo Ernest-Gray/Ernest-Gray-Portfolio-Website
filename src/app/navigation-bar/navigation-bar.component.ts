@@ -18,6 +18,11 @@ export class NavigationBarComponent implements OnInit {
       url: 'https://www.linkedin.com/in/ernest-gray-a877a9100/',
       imageSource: '/assets/LinkedInIcon.png',
     },
+    {
+      name: 'Contact Me',
+      url: '',
+      imageSource: '',
+    },
   ];
 
   OnClick(item: any): void {
