@@ -10,7 +10,7 @@ export class NavigationBarComponent implements OnInit {
   array = [
     {
       name: 'Github',
-      url: 'https://github.com/Valorak56',
+      url: 'https://github.com/Ernest-Gray',
       imageSource: '/assets/githubIcon.png',
     },
     {

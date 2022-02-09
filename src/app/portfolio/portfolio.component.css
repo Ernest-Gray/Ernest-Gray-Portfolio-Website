@@ -6,51 +6,61 @@
 
   /* Prevent background color leak outs */
   -webkit-background-clip: padding-box;
-  -moz-background-clip:    padding;
-  background-clip:         padding-box;
-
-
-
-
+  -moz-background-clip: padding;
+  background-clip: padding-box;
 }
 
 .name {
-  font-size: 32px;
-  border: black solid 3px;
   margin: 5px;
   padding: 5px;
-  text-align: center;
 
-  font-size: 250%;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color: white;
-  border: 3px solid rgb(146, 255, 246);
-  font-weight: bold;
+  text-align: left;
   align-items: center;
-  line-height: 45px;
 
-  /* display: inline-flex;
-  flex-direction: column; */
+  border: 3px solid rgb(146, 255, 246);
 
-  /* -webkit-text-stroke: 1px black; */
   background-color: rgba(0, 0, 0, 0.212);
 
-  font-size: 20px;/*FALLBACK*/
-  font-size: 2vmin;
+  color: white;
+  font-size: auto;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+  line-height: 45px;
+
+  display: table-cell;
+}
+
+.name::before {
+  content: ":";
+}
+
+.name:hover {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.14359247116815477) 0%,
+    rgba(255, 255, 255, 0) 15%,
+    rgba(255, 255, 255, 0) 100%
+  );
+
+  animation-name: hoverBounce;
+  animation-duration: 500ms;
+}
+
+@keyframes hoverBounce {
+  0% {
+    transform: translateY(-1%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
 }
 
 .container {
-  display: flex;
-  max-height: 150px;
-  width: auto;
-  max-width: 350px;
+  display: table;
 
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: flex-start;
+  width: 350px;
+  height: auto;
   padding: 3px;
-
-
-  /* background: radial-gradient(ellipse, rgb(146, 255, 246, 1), rgb(0,0,0,0)); */
-
 }

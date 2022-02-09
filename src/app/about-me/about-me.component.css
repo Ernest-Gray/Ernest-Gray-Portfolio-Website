@@ -16,6 +16,8 @@
   background: rgb(221,212,255);
   background: linear-gradient(180deg, rgba(221,212,255,1) 0%, rgba(230,224,255,1) 75%, rgba(255,255,255,1) 100%);
 
+  animation-name: helloFadeIn;
+  animation-duration: 2s;
 
 }
 
@@ -24,4 +26,10 @@
   font-size: 40px;
   text-align: center;
   font-weight: 400;
+
+}
+
+@keyframes helloFadeIn{
+  0% {opacity: 0; transform: translate(-1%);}
+  100% {opacity: 100;}
 }
