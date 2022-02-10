@@ -14,3 +14,14 @@
 
   text-align: left;
 }
+
+/* doesnt really work yet */
+.aboutMe-container{
+  animation: aboutMe-fadeIn;
+  animation-duration: 1s;
+}
+
+@keyframes aboutMe-fadeIn {
+  0% {opacity: 0; transform: scaleX(0%); transform: translateX(-5%);}
+  100% {opacity: 1; transform: scaleX(100%); transform: translateX(0%);}
+}

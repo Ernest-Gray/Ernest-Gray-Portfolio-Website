@@ -6,6 +6,9 @@
 .container-buttons {
   margin: 15px;
   display: flex;
+  flex-wrap: wrap;
   font-size: 1.5rem;
   justify-content: center;
+
+  border: white 2px solid;
 }
