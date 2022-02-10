@@ -3,21 +3,21 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { GifComponentComponent } from './gif-component.component';
+import { ContentButtonsComponent } from './content-buttons.component';
 
-describe('GifComponentComponent', () => {
-  let component: GifComponentComponent;
-  let fixture: ComponentFixture<GifComponentComponent>;
+describe('ContentButtonsComponent', () => {
+  let component: ContentButtonsComponent;
+  let fixture: ComponentFixture<ContentButtonsComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ GifComponentComponent ]
+      declarations: [ ContentButtonsComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(GifComponentComponent);
+    fixture = TestBed.createComponent(ContentButtonsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -23,20 +23,16 @@ html{
   background-size:cover;
   background-color: black;
 
-  background-image: url("/assets/Colored Portfolio Background Gif.gif");
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+
+  /* background-image: url("/assets/Colored Portfolio Background Gif.gif"); */
 
   margin: 0px;
 
 }
 
-.ErnestGray{
-  color:white;
-  font-size: 64px;
-  display: flex;
-  justify-content: center;
-  padding: 50px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-weight: bold;
+.contentPage{
   animation-name: fadeInName;
   animation-duration: 2s;
 }

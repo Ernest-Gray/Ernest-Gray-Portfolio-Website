@@ -1,13 +1,12 @@
 <html>
   <NavigationBar></NavigationBar>
-  <div class="ErnestGray">Ernest Gray IV</div>
 
-  <nav style="display: flex; justify-content: center">
-    <app-back-button-component></app-back-button-component>
-    <a class="links" routerLink="/portfolio">Portfolio</a>
-    <a class="links" routerLink="/aboutMe">About Me</a>
-  </nav>
+  <app-content-buttons></app-content-buttons>
+  <div class="contentPage" style="color: white; display: flex; justify-content: center; flex-wrap: wrap;">
+    <app-my-content-component style="margin: 15px;"></app-my-content-component>
+  </div>
 
-  <router-outlet></router-outlet>
+
+
   <!-- <mat-slider min="1" max="100" step="1" value="50"></mat-slider> -->
 </html>

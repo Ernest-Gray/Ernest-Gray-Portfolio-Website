@@ -1,4 +1,3 @@
-import { OutsideLinkComponent } from './../outside-link/outside-link.component';
 import { Component, OnInit } from '@angular/core';
 
 @Component({

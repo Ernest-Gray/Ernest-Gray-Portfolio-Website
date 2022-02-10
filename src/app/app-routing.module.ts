@@ -1,5 +1,7 @@
+import { AboutMeComponentComponent } from './about-me-component/about-me-component.component';
+import { EducationComponent } from './education/education.component';
+import { ExpirienceComponent } from './expirience/expirience.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
-import { AboutMeComponent } from './about-me/about-me.component';
 import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
 import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -11,8 +13,18 @@ const routes: Routes = [
     data: { animation: 'portfolio' },
   },
   {
+    path: 'education',
+    component: EducationComponent,
+    data: { animation: 'portfolio' },
+  },
+  {
+    path: 'expirience',
+    component: ExpirienceComponent,
+    data: { animation: 'portfolio' },
+  },
+  {
     path: 'aboutMe',
-    component: AboutMeComponent,
+    component: AboutMeComponentComponent,
     data: { animation: 'aboutMe' },
   },
 ];

@@ -1,36 +1,49 @@
+.myName {
+  padding: 10px;
+}
+
+.myRoles {
+  font-size: 1.5rem;
+}
+
+.nameAndRole {
+  margin-left: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
 
 .list {
   display: flex;
-  float: right;
-
   flex-wrap: wrap;
-}
-
-.myName {
-  font-size: 250%;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color: black;
-  margin: 5px;
-  padding: 10px;
-  font-weight: bold;
-
-  display: flex;
   align-items: center;
-
-  float: left;
+  justify-content: center;
 }
 
 .container {
-  display: inline-block;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content:space-between;
+  flex-wrap: wrap;
+
+  text-align: center;
 
   width: 100%;
   background: white;
-  background: linear-gradient(
-    180deg,
-    white 0%,
-    rgba(255, 255, 255, 0.5) 50%,
-    rgba(255, 255, 255, 0) 100%
-  );
+
+
+  color: black;
+  font-size: 2rem;
+}
+
+.link {
+  margin-right: 25px;
+  display: inline-flex;
+
+  margin: 5px;
+  padding: 10px;
+
+  text-decoration: none; /* removes the hyper text underline*/
+  color: inherit;
 }
 
 .icon {
@@ -45,25 +58,4 @@
   /* Makes the icons all black */
   filter: grayscale();
   filter: brightness(0);
-}
-
-.link {
-  margin-right: 25px;
-  display: flex;
-
-  font-size: 250%;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color: black;
-  margin: 5px;
-  padding: 10px;
-  font-weight: bold;
-  text-decoration: none; /* removes the hyper text underline*/
-
-
-
-}
-.link:hover{
-
-  border-color: 5px solid linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.2528361686471463) 85%, rgba(255,255,255,0.49933476808692223) 100%);;
-
 }
