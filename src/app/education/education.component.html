@@ -7,12 +7,59 @@
   "
 >
   <div class="container">
-    <div class="container" style="width: 100%;" *ngFor="let item of array; let i = index">
-      <div style="margin-right: 15px;">
-        <div class="header">{{ item.name }}</div>
-        <li class="notes font-size-large" *ngFor="let item of array[i].notes">{{ item }}</li>
+    <div
+      class="border"
+      style="display: flex; width: 100%; max-width: 500px; margin-bottom: 5%;"
+      *ngFor="let item of array; let i = index"
+      [ngStyle]="{
+        transform:
+          i % 2 == 1 || i == array.length - 1
+            ? 'none'
+            : 'translateY(3vh) translateX(-2vw)'
+      , 'margin-top':
+      i == array.length - 1
+        ? '0%'
+        : '0'
+  }"
+    >
+      <div
+        style="
+          margin-bottom: 15px;
+          margin-right: 10px;
+          width: 100%;
+          max-width: 33vw;
+        "
+      >
+        <div
+          class="header"
+          style="
+            margin: 10px;
+            text-align: center;
+            border-bottom: 3px solid white;
+            border-radius: 3px;
+          "
+        >
+          {{ item.name }}
+        </div>
+        <div style="display: flex; flex-direction: column">
+          <li class="notes font-size-large" *ngFor="let item of array[i].notes">
+            {{ item }}
+          </li>
+        </div>
       </div>
-      <div class="font-size-regular" style="padding-top: 5px; width: 100%; max-width: 750px;">{{ item.description }}</div>
+      <p
+        class="font-size-large"
+        style="
+          padding-top: 5px;
+          width: 100%;
+          max-width: 500px;
+          text-align: center;
+          text-indent: 10%;
+          margin-right: 15px;
+        "
+      >
+        {{ item.description }}
+      </p>
     </div>
   </div>
 </body>

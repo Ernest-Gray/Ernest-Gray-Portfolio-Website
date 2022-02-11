@@ -7,8 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MyContentComponentComponent implements OnInit {
 
-  references = [{experience: "experience"}, {portfolio: "portfolio"}, {education: "education"}];
-
   educationRoute = "eduRoute";
 
   constructor() { }

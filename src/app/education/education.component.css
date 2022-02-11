@@ -3,6 +3,7 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  justify-content: center;
   background-color: black;
 
   padding: 15px;
@@ -17,4 +18,8 @@
   0% {opacity: 0; transform: translateX(-25%); transform: scaleY(0%);}
   50% {transform: scaleY(100%);}
   100% {opacity: 100; transform: translateX(0%);}
+}
+
+.notes{
+  margin-left: 15px;
 }
