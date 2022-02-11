@@ -1,0 +1,17 @@
+<div class="mainContainer">
+  <div [ngClass]="isMobile ? 'mobile' : 'desktop'">
+    <div [ngClass]="isMobile ? 'mobileFieldBar' : 'desktopFieldBar'">
+      <div class="fields" *ngFor="let field of content; let i = index">
+        <a (click)="changeView(i)" class="field-name">
+          {{ field.fieldName }}
+        </a>
+      </div>
+    </div>
+    <div class="contentList" *ngFor="let item of content[viewIndex].content">
+      <div class="content border header">
+        <div style="border-bottom: white 3px solid; text-align: center; border-radius: 3px;">{{ item.name }}</div>
+        <img src="{{ item.imageRef }}" />
+      </div>
+    </div>
+  </div>
+</div>

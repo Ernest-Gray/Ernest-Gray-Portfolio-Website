@@ -7,8 +7,18 @@ import { Component, Output, ViewEncapsulation } from '@angular/core';
   encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
-  title = 'Ernest Gray';
-  name = "Ernest Gray";
 
-  @Output() backButtonVisable = false;
+  isMobile = false;
+
+  getIsMobile(): boolean{
+    return document.body.offsetWidth < 1024;
+  }
+
+
+  ngOnInit() {
+    this.isMobile = this.getIsMobile();
+    window.onresize = () => {
+      this.isMobile = this.getIsMobile();
+    };
+  }
 }

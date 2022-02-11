@@ -1,43 +1,45 @@
-.links {
-  color: black;
-  text-decoration: none;
-
-  background: rgb(221, 212, 255);
-  background: linear-gradient(
-    180deg,
-    rgba(221, 212, 255, 1) 0%,
-    rgba(230, 224, 255, 1) 75%,
-    rgba(255, 255, 255, 1) 100%
-  );
-
-  border: black 2px solid;
-
-  padding: 5px;
-  margin: 5px;
-}
-
-html{
+html {
   /* background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%); */
 
   background-position: center;
-  background-size:cover;
+  background-size: cover;
   background-color: black;
 
   font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: bold;
-
-  /* background-image: url("/assets/Colored Portfolio Background Gif.gif"); */
-
-  margin: 0px;
-
 }
 
-.contentPage{
+.contentPage {
   animation-name: fadeInName;
   animation-duration: 2s;
 }
 
-@keyframes fadeInName{
-  0% {opacity: 0}
-  100% {opacity: 100}
+@keyframes fadeInName {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+
+.border {
+  border: white solid 3px;
+  border-radius: 3px;
+}
+
+.header {
+  font-size: 200%;
+}
+
+.font-size-large {
+  font-size: 150%;
+}
+
+.font-size-regular {
+  font-size: 100%;
+}
+
+.font-size-smaller {
+  font-size: 75%;
 }

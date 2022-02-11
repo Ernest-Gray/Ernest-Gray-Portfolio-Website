@@ -1,3 +1,9 @@
-<p>
-  expirience works!
-</p>
+<div class="container">
+  <div class="item border" *ngFor="let item of itemsArray">
+    <div class="header">{{item.name}}</div>
+    <div style="margin-top: 15px;">{{item.content}}</div>
+  </div>
+</div>
+
+
+<!-- [@itemsFallIn]="itemsArray.length" -->

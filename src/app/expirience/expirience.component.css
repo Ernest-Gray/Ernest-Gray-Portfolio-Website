@@ -1,0 +1,22 @@
+.container{
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  animation: littleBounce .5s ease-in-out;
+}
+
+@keyframes littleBounce{
+  0% {opacity: 0; transform: "translateX(-5vw) rotateX(-50px)";}
+}
+
+.item{
+  margin-top: 15px;
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+
+  margin-inline: 15px;
+}

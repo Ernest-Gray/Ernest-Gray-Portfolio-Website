@@ -9,25 +9,25 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatSliderModule } from '@angular/material/slider';
 import { ContactMeComponentComponent } from './contact-me-component/contact-me-component.component';
-import { PortfolioComponent } from './portfolio/portfolio.component';
 import { AboutMeComponentComponent } from './about-me-component/about-me-component.component';
 import { MyContentComponentComponent } from './my-content-component/my-content-component.component';
 import { EducationComponent } from './education/education.component';
 import { ExpirienceComponent } from './expirience/expirience.component';
 import { ContentButtonsComponent } from './content-buttons/content-buttons.component';
+import { PortfolioListComponent } from './portfolio-list/portfolio-list.component';
 
 @NgModule({
-  declarations: [			
+  declarations: [
     AppComponent,
     CourseComponent,
     NavigationBarComponent,
     ContactMeComponentComponent,
-    PortfolioComponent,
-      AboutMeComponentComponent,
-      MyContentComponentComponent,
-      EducationComponent,
-      ExpirienceComponent,
-      ContentButtonsComponent
+    AboutMeComponentComponent,
+    MyContentComponentComponent,
+    EducationComponent,
+    ExpirienceComponent,
+    ContentButtonsComponent,
+      PortfolioListComponent
    ],
   imports: [
     BrowserModule,

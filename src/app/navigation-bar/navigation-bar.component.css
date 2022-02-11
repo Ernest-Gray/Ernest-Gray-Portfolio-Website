@@ -1,28 +1,18 @@
-.myName {
-  padding: 10px;
-}
-
-.myRoles {
-  font-size: 1.5rem;
-}
-
-.nameAndRole {
-  margin-left: 10px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-
 .list {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
+  align-items:flex-end;
   justify-content: center;
+
+  padding-right: 1vw;
+  padding-bottom: 1vh;
 }
 
 .container {
   display: inline-flex;
   flex-direction: row;
-  justify-content:space-between;
+  justify-content: space-between;
   flex-wrap: wrap;
 
   text-align: center;
@@ -30,17 +20,17 @@
   width: 100%;
   background: white;
 
-
   color: black;
-  font-size: 2rem;
 }
 
 .link {
-  margin-right: 25px;
-  display: inline-flex;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
 
-  margin: 5px;
-  padding: 10px;
+  margin-top: auto;
+  margin-left: 15px;
 
   text-decoration: none; /* removes the hyper text underline*/
   color: inherit;
