@@ -6,7 +6,7 @@
   justify-content: center;
   background-color: black;
 
-  padding: 15px;
+  align-items: center;
 
   text-align: left;
 
@@ -31,3 +31,50 @@
 .notes::before{
   content: "➢";
 }
+
+.containerMobile{
+
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 5%;
+  align-items: center;
+  text-align: center;
+  color: white;
+  background-color: black;
+
+
+  border: white solid 3px;
+  border-radius: 3px;
+  border-style: double;
+
+}
+
+.containerDesktop{
+
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 5%;
+  margin-left: 2.5%;
+  min-height: 50vh;
+  border-left: 3px solid white;
+}
+
+.column{
+display: flex;
+flex-direction: column;
+width: 100%;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+}
+
+div{
+  display: flex;
+}
+
+

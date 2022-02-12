@@ -8,26 +8,17 @@
 >
   <div class="container">
     <div
-      class=""
-      style="display: flex; width: 100%; max-width: 500px; margin-bottom: 5%; min-height: 50vh; border-left: 3px solid white; "
       *ngFor="let item of array; let i = index"
-      [ngStyle]="{
-        transform:
-          i % 2 == 1 || i == array.length - 1
-            ? 'none'
-            : 'translateY(3vh) translateX(-2vw)'
-      , 'margin-top':
-      i == array.length - 1
-        ? '0%'
-        : '0'
-  }"
+      [ngClass]="this.GetIsMobileService.getIsMobile(1140) ? 'containerMobile': 'containerDesktop'"
     >
       <div
         style="
           margin-bottom: 15px;
           margin-right: 10px;
           width: 100%;
-          max-width: 33vw;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
         "
       >
         <div
@@ -55,7 +46,6 @@
           max-width: 500px;
           text-align: center;
           text-indent: 10%;
-          margin-right: 15px;
         "
       >
         {{ item.description }}

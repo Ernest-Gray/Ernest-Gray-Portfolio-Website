@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
+import { GetIsMobileService } from './../get-isMobile.service';
 
 @Component({
   selector: 'NavigationBar',
   templateUrl: './navigation-bar.component.html',
   styleUrls: ['./navigation-bar.component.css'],
 })
-export class NavigationBarComponent implements OnInit {
+export class NavigationBarComponent {
   array = [
     {
       name: 'Github',
@@ -23,21 +24,11 @@ export class NavigationBarComponent implements OnInit {
       imageSource: '',
     },
   ];
+  constructor(public GetIsMobileService: GetIsMobileService) {
 
-  isMobile = false;
-
-  getIsMobile(): boolean {
-    return document.body.offsetWidth < 1200;
   }
 
   OnClick(item: any): void {
     console.log('Clicked: ' + item);
-  }
-
-  ngOnInit(): void {
-    this.isMobile = this.getIsMobile();
-    window.onresize = () => {
-      this.isMobile = this.getIsMobile();
-    };
   }
 }

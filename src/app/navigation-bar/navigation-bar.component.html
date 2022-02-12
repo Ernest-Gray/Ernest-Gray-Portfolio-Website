@@ -1,4 +1,4 @@
-<div class="container" [ngStyle]="{'flex-direction': isMobile ? 'column' : 'row'}">
+<div class="container" [ngStyle]="{'flex-direction': this.GetIsMobileService.getIsMobile(1185) ? 'column' : 'row'}">
   <div style="padding: 1vmax; padding-bottom: 1vh; display: flex; flex-direction: column;">
     <div class="header">Ernest Gray IV</div>
     <div class="font-size-large">Software Developer & Computer Scientist</div>

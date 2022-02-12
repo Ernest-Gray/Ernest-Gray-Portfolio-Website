@@ -16,6 +16,8 @@ import { ExpirienceComponent } from './expirience/expirience.component';
 import { ContentButtonsComponent } from './content-buttons/content-buttons.component';
 import { PortfolioListComponent } from './portfolio-list/portfolio-list.component';
 
+import { GetIsMobileService } from './get-isMobile.service';
+
 @NgModule({
   declarations: [
     AppComponent,

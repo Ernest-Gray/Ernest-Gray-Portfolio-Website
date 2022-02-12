@@ -1,3 +1,4 @@
+import { GetIsMobileService } from './../get-isMobile.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -38,7 +39,7 @@ export class EducationComponent implements OnInit {
         'I was homeschooled my whole pre-college life.  My mother taught me and in my mid-teens I started to learn through online courses.  Durring this entire time I participated in numerous co-operative education opportunities which allowed me to socialize with lots of other homeschoolers.',
     },
   ];
-  constructor() {}
+  constructor(public GetIsMobileService: GetIsMobileService) {}
 
   ngOnInit() {}
 }

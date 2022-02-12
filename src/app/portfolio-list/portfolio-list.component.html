@@ -1,6 +1,6 @@
 <div class="mainContainer">
-  <div [ngClass]="isMobile ? 'mobile' : 'desktop'">
-    <div [ngClass]="isMobile ? 'mobileFieldBar' : 'desktopFieldBar'">
+  <div [ngClass]="this.GetIsMobileService.getIsMobile(760) ? 'mobile' : 'desktop'">
+    <div [ngClass]="this.GetIsMobileService.getIsMobile(760) ? 'mobileFieldBar' : 'desktopFieldBar'">
       <div class="fields" *ngFor="let field of content; let i = index">
         <a (click)="changeView(i)" class="field-name">
           {{ field.fieldName }}
