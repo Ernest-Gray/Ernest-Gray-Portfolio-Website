@@ -22,4 +22,12 @@
 
 .notes{
   margin-left: 15px;
+  list-style-position: outside;
+  list-style: none;
+  margin: none;
+  padding: none;
+}
+
+.notes::before{
+  content: "➢";
 }

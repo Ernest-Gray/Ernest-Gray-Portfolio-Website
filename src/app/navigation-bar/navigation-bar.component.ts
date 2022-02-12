@@ -14,7 +14,7 @@ export class NavigationBarComponent implements OnInit {
     },
     {
       name: 'LinkedIn',
-      url: 'https://www.linkedin.com/in/ernest-gray-a877a9100/',
+      url: 'https://www.linkedin.com/in/ernest-gray-a877a9100',
       imageSource: '/assets/LinkedInIcon.png',
     },
     {
@@ -24,9 +24,20 @@ export class NavigationBarComponent implements OnInit {
     },
   ];
 
+  isMobile = false;
+
+  getIsMobile(): boolean {
+    return document.body.offsetWidth < 1200;
+  }
+
   OnClick(item: any): void {
     console.log('Clicked: ' + item);
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.isMobile = this.getIsMobile();
+    window.onresize = () => {
+      this.isMobile = this.getIsMobile();
+    };
+  }
 }

@@ -64,10 +64,6 @@
 
 }
 
-.content-name{
-
-}
-
 .contentList{
 
   display: flex;
@@ -83,6 +79,8 @@ img{
 
 a{
   cursor: pointer;
+  text-decoration: none;
+  color: inherit;
 }
 
 .mainContainer{

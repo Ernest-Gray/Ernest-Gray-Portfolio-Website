@@ -2,11 +2,15 @@ import { PortfolioListComponent } from './portfolio-list/portfolio-list.componen
 import { AboutMeComponentComponent } from './about-me-component/about-me-component.component';
 import { EducationComponent } from './education/education.component';
 import { ExpirienceComponent } from './expirience/expirience.component';
-import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
 import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
+  {
+    path: '',
+    component: AboutMeComponentComponent,
+    data: { animation: 'aboutMe' },
+  },
   {
     path: 'portfolio-list',
     component: PortfolioListComponent,
