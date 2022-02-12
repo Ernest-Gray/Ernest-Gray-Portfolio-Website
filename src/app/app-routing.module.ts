@@ -31,6 +31,11 @@ const routes: Routes = [
     component: AboutMeComponentComponent,
     data: { animation: 'aboutMe' },
   },
+  {
+    path: '**',
+    component: AboutMeComponentComponent,
+    data: { animation: 'aboutMe' },
+  }
 ];
 
 @NgModule({
