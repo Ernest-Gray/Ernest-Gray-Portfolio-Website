@@ -1,7 +1,7 @@
 .desktopFieldBar{
 
   left: 0px;
-  width: 100%;
+  width: 400px;
   max-width: 25vw;
 
 
@@ -89,7 +89,7 @@ a{
   animation-duration: 1s;
 
   height: 100%;
-  width: 80vw;
+  width: 95vw;
   display: flex;
   /* justify-content: space-evenly; */
 }
@@ -112,7 +112,7 @@ a{
 }
 
 .contentItemsScroll{
-
+  
   overflow: scroll;
   height: 100%;
   max-height: 75vh;
