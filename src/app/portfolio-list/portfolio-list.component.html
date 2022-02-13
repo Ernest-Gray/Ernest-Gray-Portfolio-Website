@@ -1,17 +1,23 @@
-<div class="mainContainer">
-  <div [ngClass]="this.GetIsMobileService.getIsMobile(760) ? 'mobile' : 'desktop'">
-    <div [ngClass]="this.GetIsMobileService.getIsMobile(760) ? 'mobileFieldBar' : 'desktopFieldBar'">
+<div  class="mainContainer">
+  <div>
+    <div class="fieldOptions" [ngClass]="this.GetIsMobileService.getIsMobile(760) ? 'mobileFieldBar' : 'desktopFieldBar'">
       <div class="fields" *ngFor="let field of content; let i = index">
         <a (click)="changeView(i)" class="field-name">
           {{ field.fieldName }}
         </a>
       </div>
     </div>
-    <div class="contentList" *ngFor="let item of content[viewIndex].content">
-      <div  class="content border header"> <!--href="item.link"-->
-        <div style="border-bottom: white 3px solid; text-align: center; border-radius: 3px;">{{ item.name }}</div>
-        <img src="{{ item.imageRef }}" />
+    <div class="contentItemsScroll">
+      <div class="contentList" *ngFor="let item of content[viewIndex].content">
+        <div  class="content border header"> <!--href="item.link"-->
+          <div style="border-bottom: white 3px solid; text-align: center; border-radius: 3px;">{{ item.name }}</div>
+          <img src="{{ item.imageRef }}" />
+        </div>
       </div>
     </div>
   </div>
+  <div class="descriptionBox">
+    TESTING
+  </div>
 </div>
+
