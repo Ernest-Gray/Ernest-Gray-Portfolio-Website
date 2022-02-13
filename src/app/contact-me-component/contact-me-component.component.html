@@ -1,6 +1,45 @@
-<div class="outer">
-  <div>
-    <button class="inner" (click)="OnClick()">Contact Me</button>
+<div>
+  <div *ngIf="!GetIsMobileService.getIsMobile(760)">
+    <div class="fadeInLeft contactSideBar header border" *ngIf="ContactMeService.viewContactInfo">
+      <button (click)="ContactMeService.viewContactInfo = !ContactMeService.viewContactInfo">🢒</button>
+      <div>
+        Contact Information
+        <div class="contactInfo">
+          <p>Phone: 443-257-4342</p>
+          <p>Email: egray4cs@gmail.com</p>
+        </div>
+      </div>
+    </div>
+    <div class="fadeInRight contactSideBar header border " *ngIf="!ContactMeService.viewContactInfo">
+        <button (click)="ContactMeService.viewContactInfo = !ContactMeService.viewContactInfo">🢐</button>
+        <div>
+          Contact Information
+          <div class="contactInfo">
+            <p>Phone: 443-257-4342</p>
+            <p>Email: egray4cs@gmail.com</p>
+          </div>
+        </div>
+    </div>
   </div>
-</div>
 
+
+  <div *ngIf="GetIsMobileService.getIsMobile(760)">
+    <div *ngIf="ContactMeService.viewContactInfo" class="contactBOTTOMBar fadeUp header border">
+      <button (click)="ContactMeService.viewContactInfo = !ContactMeService.viewContactInfo">ˇ</button>
+      <p style="border-bottom: 3px solid white;">Contact Information</p>
+      <div class="contactInfo">
+        <p>Phone: 443-257-4342</p>
+        <p>Email: egray4cs@gmail.com</p>
+      </div>
+    </div>
+    <div *ngIf="!ContactMeService.viewContactInfo" class="contactBOTTOMBar fadeDown header border">
+      <button (click)="ContactMeService.viewContactInfo = !ContactMeService.viewContactInfo">ˆ</button>
+      <p style="border-bottom: 3px solid white;" >Contact Information</p>
+      <div class="contactInfo">
+        <p>Phone: 443-257-4342</p>
+        <p>Email: egray4cs@gmail.com</p>
+      </div>
+    </div>
+  </div>
+
+</div>

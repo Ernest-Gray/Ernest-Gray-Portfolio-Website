@@ -1,3 +1,4 @@
+import { ContactMeService } from './contact-me.service';
 import { Component, Output, ViewEncapsulation } from '@angular/core';
 
 @Component({
@@ -8,5 +9,8 @@ import { Component, Output, ViewEncapsulation } from '@angular/core';
 })
 export class AppComponent {
 
+  constructor(public ContactMeService: ContactMeService){
+
+  }
   title="Ernest-Gray"
 }

@@ -1,3 +1,4 @@
+import { ContactMeService } from './../contact-me.service';
 import { Component, OnInit } from '@angular/core';
 import { GetIsMobileService } from './../get-isMobile.service';
 
@@ -24,7 +25,11 @@ export class NavigationBarComponent {
       imageSource: '',
     },
   ];
-  constructor(public GetIsMobileService: GetIsMobileService) {
+  constructor(public GetIsMobileService: GetIsMobileService, public ContactMeService: ContactMeService) {
+
+  }
+
+  OpenContactPage(){
 
   }
 

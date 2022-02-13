@@ -1,18 +1,23 @@
 <html>
-  <NavigationBar></NavigationBar>
+  <div>
+    <NavigationBar></NavigationBar>
 
-  <app-content-buttons></app-content-buttons>
-  <div
-    class="contentPage"
-    style="
-      color: white;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    "
-  >
-    <app-my-content-component
-      style="margin: 15px; display: inline-flex; flex-direction: row"
-    ></app-my-content-component>
+    <app-content-buttons></app-content-buttons>
+    <div
+      class="contentPage"
+      style="
+        color: white;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      "
+    >
+      <app-my-content-component
+        style="margin: 15px; display: inline-flex; flex-direction: row"
+      ></app-my-content-component>
+    </div>
+  </div>
+  <div>
+    <app-contact-me-component></app-contact-me-component>
   </div>
 </html>

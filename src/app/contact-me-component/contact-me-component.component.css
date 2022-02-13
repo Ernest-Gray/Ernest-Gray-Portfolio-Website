@@ -1,20 +1,91 @@
-.inner {
-  font-size: 32px;
+.contactSideBar {
+  position: fixed;
+  right: 0;
+  width: 420px;
+  bottom: 0;
   color: white;
-
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-
-  background-color: wheat;
-  border: 2px solid black;
-  border-radius: 25px;
-
-  padding: 15px;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
   text-align: center;
-
-  max-width: 250px;
+  border-right: none;
+}
+.fadeInLeft {
+  animation: fadeInLeft;
+  animation-duration: 1s;
 }
 
-.outer {
-  margin: opx;
+@keyframes fadeInLeft {
+  0% {
+    transform: translateX(95%);
+  }
+}
+
+.contactInfo {
+  background-color: inherit;
+  text-align: left;
+}
+
+.fadeInRight {
+  animation: fadeInRight;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInRight {
+  100% {
+    transform: translateX(95%);
+  }
+}
+
+.contactBOTTOMBar {
+  position: fixed;
+  width: 100%;
+  height: auto;
+  bottom: 0;
+  color: white;
+  background-color: black;
+  border-bottom: none;
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 150%;
+}
+
+.fadeUp{
+  animation: fadeUp;
+  animation-duration: 1s;
+
+}
+@keyframes fadeUp {
+  0% {
+    transform: translateY(90%);
+  }
+}
+
+.fadeDown{
+  animation: fadeDown;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+
+}
+@keyframes fadeDown {
+  100% {
+    transform: translateY(90%);
+  }
+}
+
+button{
+  background-color: inherit;
+  color: white;
+  font: inherit;
+  border: none;
+  width: auto;
+  height: auto;
+  cursor: pointer;
+}
+
+p{
+  margin: 10px;
 }

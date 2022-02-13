@@ -26,6 +26,8 @@
   align-items: center;
   flex-wrap: wrap;
 
+  cursor: pointer;
+
   margin-top: auto;
   margin-right: 15px;
 
