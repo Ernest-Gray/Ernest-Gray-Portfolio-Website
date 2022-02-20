@@ -32,12 +32,6 @@ export class EducationComponent implements OnInit {
       description:
         'During some free time during the summer of 2021 I decided to start looking into investing.  Knowing how to program already I immediately wanted to try to automate the trading process.  After much reading about the subject I decided to start my attempt using python.  Having expirience in python from school, I started designing my back-testing software.  While I only ever used it for trading fake money, otherwise called "paper-money", I did create a few algorithms that had positive returns.',
     },
-    {
-      name: 'High School',
-      notes: ["High School Diploma"],
-      description:
-        'I was homeschooled my whole pre-college life.  My mother taught me and in my mid-teens I started to learn through online courses.  Durring this entire time I participated in numerous co-operative education opportunities which allowed me to socialize with lots of other homeschoolers.',
-    },
   ];
   constructor(public GetIsMobileService: GetIsMobileService) {}
 
