@@ -4,16 +4,18 @@
 
     <button class="header" [ngStyle]="{'cursor': mainButtonActive ? 'inherit' : 'pointer' }" (click)="MainButtonClick()">
       {{content[currentFieldIndex].content[currentContentIndex].name}}
+      <br>
+      ☰
 
       <div *ngIf="mainButtonActive">
-        <div class="header" style="display: flex; flex-wrap: wrap; flex-direction: column;"
+        <div class="header" style="display: flex; flex-wrap: wrap; flex-direction: column; padding:5px"
           *ngFor="let field of content; let i = index;">
-          <div style="font-size: 50%; border-top: 3px solid;">
+          <div style="font-size: 50%; border-top: 3px solid; padding-bottom:10px;">
             {{field.fieldName}}
           </div>
-          <div style="padding-inline: 25px;">
-            <button class="border button" style="font-size: 40%;" [ngStyle]="{'background-color': (currentFieldIndex == i && currentContentIndex == j) ? 'grey' : 'inherit' }" (click)="OnContentClick(i,j)"
-              *ngFor="let item of field.content; let j = index">
+          <div style="padding-inline: 25px; padding-bottom: 15px; display:flex; flex-direction:column; justify-content:center; align-items:center; ">
+            <button class="border button"  [ngStyle]="{'background-color': (currentFieldIndex == i && currentContentIndex == j) ? 'grey' : 'inherit' }" (click)="OnContentClick(i,j)"
+              *ngFor="let item of field.content; let j = index" style="font-size: 40%; padding-bottom:15px; padding-top:15px">
               {{item.name}}
             </button>
           </div>

@@ -10,7 +10,7 @@ export class EducationComponent implements OnInit {
   array = [
     {
       name: 'Towson University',
-      notes: ["Persuing my Bachelors Degree in Computer Science"],
+      notes: ["Bachelors Degree in Computer Science"],
       description:
         'Where I currently am enrolled.  I am an undergraduate studying computer science and plan to graduate in the spring of 2023',
     },
